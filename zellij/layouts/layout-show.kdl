@@ -1,0 +1,28 @@
+layout "layout-show" {
+    tab name="Sessão Principal" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane split_direction="vertical" {
+            pane size="20%" {
+                pane {
+                    command "htop"
+                    name "Desempenho"
+                    close_on_exit false
+                }
+                pane {
+                    name "Auxiliar"
+                }
+
+            }
+            pane size="80%" {
+                name "Painel Principal"
+                cwd "~/Ilan"
+                focus true
+            }
+        }
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+}
