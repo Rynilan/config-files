@@ -1,0 +1,16 @@
+# Tudo 
+*
+
+# Exceto (arquivos):
+!.gitignore
+!starship.toml
+
+# Exceto (pastas):
+!nvim/
+!kitty/
+!hypr/
+!zellij/
+!neofetch/
+!swaylock/
+!wofi/
+!git/
