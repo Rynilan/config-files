@@ -4,18 +4,13 @@ layout "layout-show" {
             plugin location="zellij:tab-bar"
         }
         pane split_direction="vertical" {
-            pane size="20%" {
-                pane {
-                    command "htop"
-                    name "Desempenho"
-                    close_on_exit false
-                }
+            pane size="40%" {
                 pane {
                     name "Auxiliar"
                 }
 
             }
-            pane size="80%" {
+            pane size="60%" {
                 name "Painel Principal"
                 cwd "~/Ilan"
                 focus true
