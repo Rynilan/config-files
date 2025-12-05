@@ -3,7 +3,7 @@ return {
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup()
-		end
+		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
@@ -11,32 +11,44 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = { "lua_ls","pylsp","jdtls", "asm_lsp"}
 			})
-		end
+		end,
 
 	},
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({
+
+			vim.lsp.config("lua_ls", {
 				capabilities = capabilities
 			})
-			lspconfig.pylsp.setup({
+			vim.lsp.config("pylsp", {
 				capabilities = capabilities
 			})
-			lspconfig.jdtls.setup({
+			vim.lsp.config("jdtls", {
 				capabilities = capabilities
 			})
-			lspconfig.asm_lsp.setup({
+			vim.lsp.config("asm_lsp", {
 				capabilities = capabilities
 			})
-			lspconfig.arduino_language_server.setup({
+			vim.lsp.config("arduino_language_server", {
 				capabilities = capabilities
 			})
-			lspconfig.clangd.setup({
+			vim.lsp.config("clangd", {
 				capabilities = capabilities
 			})
-		end
-		}
+			vim.lsp.config("intelephense", {
+				capabilities = capabilities
+			})
+			vim.lsp.config("ast_grep", {
+				capabilities = capabilities
+			})
+			vim.lsp.config("ts_ls", {
+				capabilities = capabilities
+			})
+			vim.lsp.config("verible", {
+				capabilities = capabilities
+			})
+		end,
+	},
 }

@@ -16,6 +16,8 @@ vim.keymap.set('n', '<leader>fg', require("telescope.builtin").live_grep, {})
 
 -- Navegação pelas janelas.
 vim.keymap.set('n', '<S-tab>', ':BufferLineCyclePrev<CR>')
+vim.keymap.set('n', '<leader>r', ':BufferLineCloseRight<CR>')
+vim.keymap.set('n', '<leader>l', ':BufferLineCloseLeft<CR>')
 
 -- Mostrar janela de erros --
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, {})
