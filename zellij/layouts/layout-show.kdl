@@ -1,5 +1,5 @@
 layout "layout-show" {
-    tab name="Sessão Principal" {
+	default_tab_template {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }

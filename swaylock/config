@@ -36,5 +36,5 @@ grace-no-mouse
 grace-no-touch
 fade-in=0.2
 ignore-empty-password
-timeout 900 'swaylock'
+timeout 900
 
