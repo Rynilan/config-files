@@ -49,6 +49,9 @@ return {
 			vim.lsp.config("verible", {
 				capabilities = capabilities
 			})
+			vim.lsp.config("cypher_ls", {
+				capabilities = capabilities
+			})
 		end,
 	},
 }
