@@ -6,11 +6,11 @@
 !starship.toml
 
 # Exceto (pastas):
-!nvim/
-!kitty/
-!hypr/
-!zellij/
-!neofetch/
-!swaylock/
-!wofi/
-!git/
+!nvim/*
+!kitty/*
+!hypr/*
+!zellij/*
+!neofetch/*
+!swaylock/*
+!wofi/*
+!git/*

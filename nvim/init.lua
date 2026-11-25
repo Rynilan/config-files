@@ -1,4 +1,4 @@
-# This is the settins of NeoVim.
+-- This is the settins of NeoVim.
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then

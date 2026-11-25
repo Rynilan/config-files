@@ -10,9 +10,9 @@
  * ----------------------------------------------------- 
 */
 
-@define-color backgroundlight #EBAD03;
-@define-color backgrounddark #EBAD03;
-@define-color workspacesbackground2 #EBAD03;
+@define-color backgroundlight #c29100;
+@define-color backgrounddark #c29100;
+@define-color workspacesbackground2 #c29100;
 @define-color bordercolor #FFFFFF;
 @define-color textcolor1 #FFFFFF;
 @define-color textcolor2 #FFFFFF;

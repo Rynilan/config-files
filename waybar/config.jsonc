@@ -70,7 +70,7 @@
     "custom/appmenu": {
         "format": "󰣇",
         "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings",
-        "on-click": "wofi",
+        "on-click": "hyprlauncher",
         "tooltip": true
     },
     
